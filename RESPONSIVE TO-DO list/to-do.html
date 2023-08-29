@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="to-do.css">
+    <title>Task List 2023</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="" class=" main_container container d-flex justify-content-center align-items-center vh-100">
+    <div class="task-card">
+        <header class="task-list-header">
+            <h1 class="text-center">Task List 2023</h1>
+        </header>
+            <!-- ... (form content) ... -->
+            <div id="new-task-form">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-7">
+                        <div class="input-group">
+                            <input 
+                                type="text" 
+                                name="new-task-input" 
+                                id="new-task-input" 
+                                class="form-control" 
+                                placeholder="What do you have planned?" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex">
+                        <button 
+                            type="submit"
+                            id="new-task-submit"
+                            class="btn btn-primary btn-block btn-spacing flex-fill"
+                            onclick="addtodo()">
+                              Add task   
+                        </button>
+                    </div>
+                    <div class="col-md-3 d-flex">
+                        <button 
+                            type="submit"
+                            id="new-task-REMOVE_ALL"
+                            class="btn btn-primary btn-block  flex-fill"
+                            onclick="deleteall()">
+                            REMOVE ALL
+                        </button>
+                    </div>
+                </div>
+                <section class="task-list" id="task-list">
+                    <h2 class="text-center">Tasks</h2>
+                    <div>
+                        <ol class="text-center list " id="tasks_ol">
+                            <!-- Task items will be added here -->
+                       </ol>
+                    </div>
+                </section>
+            </div>
+       
+    </div>
+</div>
+
+<!-- ... (scripts and Bootstrap JS) ... -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="to-do.js"></script>
+
+</body>
+</html>
